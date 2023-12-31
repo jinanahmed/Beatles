@@ -1,0 +1,494 @@
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    vertical-align: middle;
+}
+@font-face {
+    font-family: myriad-regular;
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF);
+}
+.clear{
+    clear: both;
+}
+/* common css */
+
+/* header css */
+#header{
+    background: #0872b9;
+    height: 32px;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.headertext{
+    width: 50%;
+    float: left;
+}
+.headertext{
+    line-height: 32px;
+    font-size: 14pt;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+.headericons{
+    float: right;
+    line-height: 32px;
+}
+.headericons a{
+    margin-left: 25px;
+    color: #fff;
+    transition: all linear 0.1s;
+}
+
+.headericons a:hover{
+    color: #000;
+}
+
+/* header css */
+
+/* navbar css */
+
+#nav{
+    height: 80px;
+}
+
+.logo a{
+    line-height: 80px;
+    width: 20%;
+    float: left;
+}
+
+.navtext{
+    float: left;
+    width: 80%;
+}
+.navtext ul{
+    float: right;
+}
+.navtext ul li{
+    float: left;;
+}
+.navtext ul li a{
+    line-height: 80px;
+    margin-left: 15px;
+    text-transform: capitalize;
+    font-family: myriad-regular;
+    font-size: 14pt;
+    color: #353535;
+    transition: all linear 100ms;
+}
+.navtext ul li a:hover{
+    color: #0872b9;
+}
+
+/* navbar css */
+
+/* banner css */
+
+#banner{
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 87px 0;
+    z-index: 1;
+}
+.bannertext{
+    text-align: right;
+    float: right;
+    color: #fff;
+}
+.bannertext h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+.bannertext h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+.bannertext p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+    line-height: 24pt;
+    width: 470px;
+}
+#banner::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bannerbutton a{
+    padding: 10px 20px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    border: 1px solid #fff;
+    margin: 30px 0 0 20px;
+}
+.bannerbutton a:hover{
+    background-color: #0872b9;
+    border: 1px solid #0872b9;;
+}
+/* banner css */
+/* about css */
+#about{
+    text-align: center;
+}
+.titleplace h3{
+    font-size: 24pt;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #353535;
+    margin-top: 60px;
+}
+.titleplace{
+    position: relative;
+    display: inline-block;
+}
+.titleplace img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.aboutimage{
+    width: 380px;
+    float: left;
+    margin-right: 20px;
+}
+.abouttext{
+    width: 540px;
+    float: left;
+}
+.abouttext p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13pt;
+    color: #353535;
+    text-align: left;
+    padding-top: 45px;
+    line-height: 24px;
+}
+.abouttext p span{
+    padding-top: 10px;
+    display: block;
+}
+.aboutplaceholder{
+    padding-top: 40px;
+}
+/* about css */
+
+/* services css */
+
+#services{
+    text-align: center;
+}
+.servicecards {
+    margin-top: 68px;
+    width: 31%;
+    padding: 50px 21px 20px 21px;
+    background: #f1f1f1;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+.servicecards h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16pt;
+    text-transform: uppercase;
+    color: #353535;
+    font-weight: 500;
+
+}
+.servicecards p{
+    font-size: 13pt;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    color: #353535;
+    padding-top: 20px;
+}
+.serviceicon{
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    line-height: 69px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all linear 100ms;
+}
+.serviceicon::before {
+    content: '';
+    position: absolute;
+    height: 69px;
+    width: 69px;
+    top: -3px;
+    left: -3px;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    transition: all linear 100ms;
+}
+.serviceicon::after {
+    content: '';
+    position: absolute;
+    height: 71px;
+    width: 71px;
+    top: -7px;
+    left: -7px;
+    border-radius: 50%;
+    border: 4px solid rgb(255, 255, 255);
+}
+.servicerow .servicecards:nth-child(3){
+    margin-right: 0;
+}
+.servicecards:hover .serviceicon{
+    background: #5bc5f4;
+}
+.servicecards:hover .serviceicon::before{
+    content: '';
+    position: absolute;
+    height: 69px;
+    width: 69px;
+    top: -3px;
+    left: -3px;
+    border-radius: 50%;
+    border: 1px solid #5bc5f4;
+}
+.servicecards:hover{
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+    transition: all linear 200ms;
+}
+/* services css */
+
+/* portfolio css */
+
+#portfolio{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.portimg{
+    float: left;
+    margin-right: 20px;
+    height: 541px;
+    width: 220px;
+    position: relative;
+}
+.img1{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.img2{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.port-r{
+    margin-top: 30px;
+}
+.port-r .portimg:nth-child(4){
+    margin-right: 0;
+}
+.overlay{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all linear 0.5s;
+}
+.overlay a{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: #5bc5f4;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img1:hover .overlay{
+    bottom: 0%;
+    transition: all linear 0.5s;
+}
+.img2:hover .overlay{
+    bottom: 0%;
+    
+}
+/* portfolio css */
+
+/* team css */
+
+#team{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.team-r{
+    margin-top: 60px;
+}
+.teamtext h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 16pt;
+    line-height: 24pt;
+}
+.teamtext p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14pt;
+    line-height: 24pt;
+}
+.teamm{
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.team-r .teamm:nth-child(4){
+    margin-right: 0;
+}
+.teamimg{
+    position: relative;
+}
+.teamic{
+    position: absolute;
+    top: 0;
+    left: 220px;
+    width: 80px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all linear 200ms;
+}
+.teamic ul li a{
+    color: #fff;
+}
+.teamic ul{
+    margin-top: 35px;
+}
+.teamic ul li{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 15px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: all linear 0.1s;
+}
+.teamic ul li:hover{
+    background: #5bc5f4;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #5bc5f4;
+}
+.teamimg:hover .teamic{
+    left: 140px;
+}
+.teamtext:hover h4{
+    color: #5bc5f4;
+}
+
+/* team css */
+
+/* testimonials css */
+
+#testimonial{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.tst-div{
+    position: relative;
+    width: 48%;
+    float: left;
+    margin-right: 20px;
+}
+.tstimg{
+    padding-bottom: 34px;
+}
+.tstdtl{
+    position: relative;
+    padding: 20px 21px;
+    background: #f1f1f1;
+}
+.tstdtl ul li{
+    float: left;
+    font-size: 13pt;
+    color: #5bc5f4;
+}
+.tstdtl ul{
+    position: absolute;   
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: px;
+}
+.tstdtl h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16pt;
+    color: #353535;
+}
+.tstdtl p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 13pt;
+    color: #555555;
+    margin-top: 20px;
+}
+.tst-r .tst-div:nth-child(2){
+    margin-right: 0;
+}
+/* testimonials css */
+
+/* footer css */
+
+#footer{
+    padding: 20px 0;
+    background: #353535;
+}
+.ft1{
+    float: left;
+    width: 25%;
+}
+.ft2{
+    float: left;
+    width: 25%;
+}
+.ft3{
+    float: left;
+    width: 20%;
+}
+.ft4{
+    float: left;
+    width: 30%;
+}
+/* footer css */
